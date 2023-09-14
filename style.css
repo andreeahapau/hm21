@@ -1,0 +1,484 @@
+/* Stiluri comune pentru toate dimensiunile ecranului */
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    overflow-y: auto;  
+    overflow-x: hidden; 
+}
+
+/* Stiluri pentru ecrane mici (max-width: 375px) */
+@media (max-width: 600px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+  #img1{
+    width: 90px;
+    height:30px;
+    padding-top: 10px;
+  }
+  .firstList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    gap: 25px; /* Add some spacing between menu items */
+    font-family: 'Raleway', sans-serif;
+    align-content: flex-end;
+}
+.page1{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+
+}
+.page1 p{
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+h1{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+#textToClick{
+  color:green;
+  text-decoration: underline; 
+  text-align: center;
+}
+fieldset{
+  width: 280px;
+  height: 150px;
+  border: 1px solid transparent; /* Faceți bordura inițial transparentă */
+  border-radius: 5px; /* Rotunjimea colțurilor */
+  padding: 30px; /* Spațierea interioară */
+  position: relative;
+  font-size: 14px;
+  flex-direction: column;
+}
+fieldset::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent; /* Grosimea și culoarea inițială transparentă */
+  border-radius: 5px; /* Rotunjimea colțurilor */
+  animation: glow 2s linear infinite; /* Animatie de strălucire */
+}
+@keyframes glow {
+  0% {
+    border-color: transparent; /* La început, bordura este transparentă */
+  }
+  50% {
+    border-color: rgba(43, 45, 45, 0.5) /* La jumătatea animației, faceți bordura aproape invizibilă */
+  }
+  100% {
+    border-color: transparent; /* La sfârșit, bordura este din nou transparentă */
+  }
+}
+#feedback{
+display: flex;
+flex-direction: row;
+align-content: flex-start; 
+}
+#imageFeedback{
+  border-radius: 20px;
+  width:30px;
+  height:30px;
+  margin-top:10px;
+  margin-right:20px;
+}
+#name {
+  font-weight: bold;
+}
+#function{
+  font-size: 12px;
+}
+
+#elements{
+  display: flex;
+  flex-direction: column;
+}
+
+#img2{
+    padding-top: 60px;
+    width:350px;
+    height:220px;
+    display: flex;
+    order:-1;
+}
+#first{
+    order:1;
+}
+
+#emailInput_section1, #emailInput_section2{
+    width:270px;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  #buttonEmail_section1, #buttonEmail_section2{
+    font-family: 'Raleway', sans-serif;
+    width: 300px;
+    padding: 1em;
+    font-size: 14px;
+    color: white;
+    background:hsl(224, 93%, 58%);
+    font-weight: 600;
+    border: 1px solid rgb(67, 67, 67);
+    border-radius: 3px;
+    justify-self: end;
+  }
+ 
+  #section1, #section2{
+  color:rgb(244, 102, 114);
+  font-size: 12px;
+  }
+  #img4{
+    width:450px;
+    height:280px;
+    display: flex;
+    
+  }
+  #imageFeedback{
+    display: flex;
+    width:40px;
+    height:40px;
+  }
+  #feedback{
+    display: flex;
+    flex-direction: row;
+  }
+  
+#footer{
+  display: flex;
+  background-color: hsl(238, 22%, 44%);
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width:350px;
+  text-align:center;
+}
+#footer p{
+  color:white;
+  margin-left:20px;
+  margin-right:20px;
+}
+#h1-footer{
+color:white;
+font-weight: bold;
+margin-left:35px;
+}
+#mail-footer{
+margin-left: 20px;
+display: flex;
+flex-direction: column;
+padding-top: 30px;
+}
+#end-footer{
+  display: flex;
+  background-color: hsl(243, 87%, 12%);
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-left: 105px;
+
+}#containers{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-left: -40px;
+  padding-top: 20px;
+  width:1100px;
+  height: auto;
+}
+
+.block-3{
+  display: flex;
+  list-style-type: none;
+  color:white;
+  flex-direction: column; 
+  align-items: left;
+}
+.block-3 li {
+  margin-bottom: 20px; 
+}
+.block-2{
+  display: flex;
+  list-style-type: none;
+  color:white;
+  flex-direction: column; 
+  align-items: left;
+}
+.block-2 li {
+  margin-bottom: 20px; 
+}
+.block-1{
+  display: flex;
+  list-style-type: none;
+  color:white;
+  flex-direction: column; 
+  align-items: left;
+}
+.block-1 li {
+  margin-bottom: 20px; 
+}
+.block-1 a{
+  color: white;
+}
+.block-1  li:hover, .block-2 li:hover, .block-3 li:hover, .social-icons a:hover{
+  cursor: pointer;
+  color:rgb(65, 65, 139)
+}
+}
+
+
+/* Stiluri pentru ecrane mari (min-width: 1440px) */
+@media (min-width: 1300px) {
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:60px
+    }
+    @import url('https://fonts.google.com/specimen/Raleway');
+    .firstList {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: row;
+        gap: 30px; /* Add some spacing between menu items */
+        font-family: 'Raleway', sans-serif;
+      }
+     .page1{ 
+      display: flex;
+      margin-top: 60px;
+      padding-top: 20px;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      margin-bottom: 100px;
+      width: 1300px; 
+      margin:60px
+    }
+      h1,p{
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+      }  
+      #img2{
+        padding-top: 60px;
+        width:650px;
+        height:450px;
+        display: flex;
+        margin-right: 80px;
+        margin-left:80px;
+      }
+      #first{
+        padding-top: 90px;
+        order:1;
+      }
+      #emailInput_section1, #emailInput_section2{
+      width:270px;
+      padding: 12px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    #buttonEmail_section1, #buttonEmail_section2{
+      font-family: 'Raleway', sans-serif;
+      width: 170px;
+      padding: 1em;
+      font-size: 14px;
+      color: white;
+      background:hsl(224, 93%, 58%);
+      font-weight: 600;
+      border: 1px solid rgb(67, 67, 67);
+      border-radius: 3px;
+      justify-self: end;
+    }
+    #buttonEmail_section1:hover{
+      background:hsl(212, 100%, 72%);
+    }
+    #section1, #section2{
+    color:rgb(244, 102, 114);
+    font-size: 12px;
+    }
+    
+#page2{
+    display: flex;
+    margin-top: 150px;
+    padding-top: 105px;
+    background-image: url('https://res.cloudinary.com/hardik-khandelwal/image/upload/v1585941172/Fylo_Landing/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    margin:60px
+  }
+  #img4{
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    width:650px;
+    height:450px;
+  }
+  #textToClick{
+    color:green;
+    text-decoration: underline; 
+  }
+  #textToClick:hover {
+    color: rgb(67, 161, 95); 
+    cursor: pointer; 
+  }
+  fieldset{
+    width: 310px;
+    height: 150px;
+    border: 1px solid transparent; /* Faceți bordura inițial transparentă */
+    border-radius: 5px; /* Rotunjimea colțurilor */
+    padding: 30px; /* Spațierea interioară */
+    position: relative;
+    font-size: 14px;
+    flex-direction: column;
+  }
+  fieldset::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent; /* Grosimea și culoarea inițială transparentă */
+    border-radius: 5px; /* Rotunjimea colțurilor */
+    animation: glow 2s linear infinite; /* Animatie de strălucire */
+  }
+  @keyframes glow {
+    0% {
+      border-color: transparent; /* La început, bordura este transparentă */
+    }
+    50% {
+      border-color: rgba(43, 45, 45, 0.5) /* La jumătatea animației, faceți bordura aproape invizibilă */
+    }
+    100% {
+      border-color: transparent; /* La sfârșit, bordura este din nou transparentă */
+    }
+  }
+  #feedback{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start; 
+  }
+  #imageFeedback{
+    border-radius: 20px;
+    width:30px;
+    height:30px;
+    margin-top:10px;
+    margin-right:20px;
+  }
+  #name {
+    font-weight: bold;
+  }
+  #function{
+    font-size: 12px;
+  }
+
+  #elements{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+#footer{
+  display: flex;
+  background-color: hsl(238, 22%, 44%);
+  flex-direction: row;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+#footer p{
+  color:white
+}
+#h1-footer{
+font-size: 32px;
+color:white;
+font-weight: bold;
+}
+#mail-footer{
+margin-left: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+margin-left: 200px;
+padding-top: 30px;
+}
+#container{
+  margin-left: 100px;
+}
+
+#end-footer{
+  display: flex;
+  background-color: hsl(243, 87%, 12%);
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-left: 105px;
+
+}#containers{
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+  margin-left: -40px;
+  padding-top: 20px;
+  width:1100px;
+  height: auto;
+}
+
+.block-3{
+  display: flex;
+  list-style-type: none;
+  color:white;
+  flex-direction: column; 
+  align-items: left;
+}
+.block-3 li {
+  margin-bottom: 20px; 
+}
+.block-2{
+  display: flex;
+  list-style-type: none;
+  color:white;
+  flex-direction: column; 
+  align-items: left;
+}
+.block-2 li {
+  margin-bottom: 20px; 
+}
+.block-1{
+  display: flex;
+  list-style-type: none;
+  color:white;
+  flex-direction: column; 
+  align-items: left;
+}
+.block-1 li {
+  margin-bottom: 20px; 
+}
+.block-1 a{
+  color: white;
+}
+.block-1  li:hover, .block-2 li:hover, .block-3 li:hover, .social-icons a:hover{
+  cursor: pointer;
+  color:rgb(65, 65, 139)
+}
+}
+
+
